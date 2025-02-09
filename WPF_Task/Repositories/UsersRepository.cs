@@ -31,7 +31,8 @@ namespace WPF_Task.Repositories
 
         public void DeleteUserFromDb(long id)
         {
-            var user = Connect.DbConnection.Users.Find(id);
+            //var user = Connect.DbConnection.Users.Find(id);
+
 
             Connect.DbConnection.Users.Remove(user);
             Connect.DbConnection.SaveChanges();
